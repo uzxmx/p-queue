@@ -47,7 +47,7 @@ export default class PQueue<QueueType extends Queue<RunFunction, EnqueueOptionsT
 	#isPaused: boolean;
 
 	// Use to assign a unique identifier to a promise function, if not explicitly specified
-	#idAssigner = 1n;
+	#idAssigner = 1;
 
 	// Track currently running tasks for debugging
 	readonly #runningTasks = new Map<symbol, {
